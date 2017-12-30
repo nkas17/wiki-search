@@ -1,0 +1,113 @@
+/* //#F81B84 - magenta
+//#F5CE28 - yellow
+//#43C0F6 - cyan
+//#F2EEE2 - biege 
+*/
+
+:root {
+  --main-theme-color: #43C0F6 ;
+  --second-theme-color: #F2EEE2;
+  --third-theme-color: #F5CE28;
+  --forth-theme-color: #F81B84;
+}
+
+html{
+  background-color: var(--main-theme-color);;
+}
+
+.main-content{
+  margin: 1rem;
+  padding: 1rem 0;
+  background-color: var(--third-theme-color);
+  border-radius: 10px;
+  font-size: 1.5rem;
+  font-family: Verdana;
+}
+
+.random {
+  cursor: pointer;
+}
+
+.random,
+.search,
+#search-results {
+  background-color: var(--second-theme-color);
+  padding: 5%;
+  border-radius: 10px;
+  text-align: center;
+  border: 3px solid var(--second-theme-color);
+  margin: 0 1rem 1rem 1rem;
+}
+
+.search,
+#search-results {
+  margin: 0 1rem;
+}
+
+.search{
+	padding-bottom: 0; 
+}
+
+#search-results {
+	display: none;  
+	padding: 0 2rem;
+}
+
+.random:hover,
+#search-by:hover,
+#search-by:focus{
+  border: 3px solid #F81B84;
+}
+
+#search-by{
+  border-radius: 10px;
+  border: 3px solid white;
+  padding: 15px;
+  font-size: 1.5rem; 
+  outline: none;
+}
+
+.button {
+  background-color: #F81B84;
+	border: 3px solid #F81B84;
+/*   color: #F2EEE2; */
+  border-radius: 10px;
+  padding: 15px;
+  font-family: inherit;
+  font-size: inherit;
+  margin: 5%;
+	cursor: pointer;
+	width: 30%;
+}
+
+.button-secondary {
+	background-color: transparent;
+}
+
+.button:hover{
+  background-color: #F81B84CC;
+}
+
+.result {
+	padding: 5px;
+	border-bottom: 5px solid var(--third-theme-color);;
+}
+
+.result:hover {
+	background-color: #0000001A;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.searchmatch {
+	background-color: #0000001A;
+	border-radius: 5px;
+	border: 0;
+}
+a:visited,
+a:link,
+a:hover {
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+}

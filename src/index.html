@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>wiki search by nathanmweller</title>
+	<link href="./main.css" rel="stylesheet">
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+	<script src="./main.js"></script>
+</head>
+<body>
+	<main class="main-content">
+		<p id="random" class="random">view a random article</p>
+		<div id="search" class="search">
+			<form action="#search-results">
+				<label >search for a wikipedia article</label>
+				<input required id="search-by" size="20"/>
+				<div>
+					<button class="button" id="submit-search">search</button>
+					<button class="button button-secondary" type="button" id="clear-search">clear</button>
+				</div>
+			</form>
+		</div>
+		<div id="search-results">
+			<div id='loader'><p>...Loading</p></div>
+		</div>
+	</main>
+</body>
+</html>
